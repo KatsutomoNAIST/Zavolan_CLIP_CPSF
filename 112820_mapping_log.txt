@@ -1,0 +1,1089 @@
+Last login: Mon Nov 16 14:48:36 on ttys000
+(base) okamurak@rnalab ~ % cd /Volumes/NAIST_data007/Zavolan_CPSF6_CLIP 
+(base) okamurak@rnalab Zavolan_CPSF6_CLIP % chmod +x /Volumes/NAIST_data007/Zavolan_CPSF6_CLIP/a01_download_SRA_fastqdump.sh
+(base) okamurak@rnalab Zavolan_CPSF6_CLIP % /Volumes/NAIST_data007/Zavolan_CPSF6_CLIP/a01_download_SRA_fastqdump.sh /Volumes/NAIST_data007/Zavolan_CPSF6_CLIP/SRR_Acc_List.txt
+Start
+Thu Nov 26 20:04:05 JST 2020
+variables to process
+SRR488729
+download SRA file SRR488729 to /Volumes/NAIST_data007/Zavolan_CPSF6_CLIP
+SRR ids: ['SRR488729']
+extra args: ['--gzip']
+tempdir: /var/folders/r7/xhkmxly96ngdryczwwth_9r00000gp/T/pfd_38uosrvy
+SRR488729 spots: 33238836
+blocks: [[1, 4154854], [4154855, 8309708], [8309709, 12464562], [12464563, 16619416], [16619417, 20774270], [20774271, 24929124], [24929125, 29083978], [29083979, 33238836]]
+Read 4154854 spots for SRR488729
+Written 4154854 spots for SRR488729
+Read 4154854 spots for SRR488729
+Written 4154854 spots for SRR488729
+Read 4154858 spots for SRR488729
+Written 4154858 spots for SRR488729
+Read 4154854 spots for SRR488729
+Written 4154854 spots for SRR488729
+Read 4154854 spots for SRR488729
+Written 4154854 spots for SRR488729
+Read 4154854 spots for SRR488729
+Written 4154854 spots for SRR488729
+Read 4154854 spots for SRR488729
+Written 4154854 spots for SRR488729
+Read 4154854 spots for SRR488729
+Written 4154854 spots for SRR488729
+variables to process
+SRR488727
+download SRA file SRR488727 to /Volumes/NAIST_data007/Zavolan_CPSF6_CLIP
+SRR ids: ['SRR488727']
+extra args: ['--gzip']
+tempdir: /var/folders/r7/xhkmxly96ngdryczwwth_9r00000gp/T/pfd_v21yvr4e
+SRR488727 spots: 57133855
+blocks: [[1, 7141731], [7141732, 14283462], [14283463, 21425193], [21425194, 28566924], [28566925, 35708655], [35708656, 42850386], [42850387, 49992117], [49992118, 57133855]]
+Read 7141738 spots for SRR488727
+Written 7141738 spots for SRR488727
+Read 7141731 spots for SRR488727
+Written 7141731 spots for SRR488727
+Read 7141731 spots for SRR488727
+Written 7141731 spots for SRR488727
+Read 7141731 spots for SRR488727
+Written 7141731 spots for SRR488727
+Read 7141731 spots for SRR488727
+Written 7141731 spots for SRR488727
+Read 7141731 spots for SRR488727
+Written 7141731 spots for SRR488727
+Read 7141731 spots for SRR488727
+Written 7141731 spots for SRR488727
+Read 7141731 spots for SRR488727
+Written 7141731 spots for SRR488727
+Done
+Thu Nov 26 20:12:52 JST 2020
+(base) okamurak@rnalab Zavolan_CPSF6_CLIP % fastqc
+(base) okamurak@rnalab Zavolan_CPSF6_CLIP % fastqc SRR488727.fastq.gz
+Started analysis of SRR488727.fastq.gz
+çApprox 5% complete for SRR488727.fastq.gz
+^C%                                                                             (base) okamurak@rnalab Zavolan_CPSF6_CLIP % chmod +x /Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF/a1_Preprocess_Fastq.sh
+(base) okamurak@rnalab Zavolan_CPSF6_CLIP % chmod +x /Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF/a01_getlistforpreprocessfastqgztllhpc.sh
+(base) okamurak@rnalab Zavolan_CPSF6_CLIP % export PATH=$PATH:/Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF                              
+(base) okamurak@rnalab Zavolan_CPSF6_CLIP % cd /Volumes/NAIST_data007/Zavolan_CPSF6_CLIP
+(base) okamurak@rnalab Zavolan_CPSF6_CLIP % /Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF/a1_Preprocess_Fastq.sh /Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF/preprocess.txt
+/Users/okamurak/.bash_profile: line 17: export　PATH=/Users/okamurak/anaconda3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/okamurak/anaconda3/bin:/Users/okamurak/anaconda3/condabin:/Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF: No such file or directory
+usage: preprocessfastqgzwithflankrandomnucleotide.sh <LIB> <ADAPTER> <QUALSCORE> <MINLENGTH> <MAXLENGTH> <RANDOMNUC5P> <RANDOMNUC3P>
+where: <LIB> is the library name
+       <ADAPTER> is the adapter to clip
+       <QUALSCORE> is the quality score encoded in fastq file
+       <MINLENGTH> is the minimum read length
+       <MAXLENGTH> is the maximum read length
+       <RANDOMNUC5P> is the number of flanking random nucleotides to trim at 5p end
+       <RANDOMNUC3P> is the number of flanking random nucleotides to trim at 3p end
+       written in each row provided in a tab-separated text file.
+This script does the job of preprocessing fastq files
+from Illumina sequencing with a list of variables.
+Fastq file is FastQCed, gunzip, clipped 
+(base) okamurak@rnalab Zavolan_CPSF6_CLIP % /Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF/a01_getlistforpreprocessfastqgztllhpc.sh /Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF/preprocess.txt  
+/Users/okamurak/.bash_profile: line 17: export　PATH=/Users/okamurak/anaconda3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/okamurak/anaconda3/bin:/Users/okamurak/anaconda3/condabin:/Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF: No such file or directory
+Start
+Fri Nov 27 09:21:31 JST 2020
+variables to process
+SRR488727 TCGTATGCCGTCTTCTGCTTGT Q64 18 30 0 0
+run preprocessing
+/Users/okamurak/.bash_profile: line 17: export　PATH=/Users/okamurak/anaconda3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/okamurak/anaconda3/bin:/Users/okamurak/anaconda3/condabin:/Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF: No such file or directory
+check locale setting
+LANG=""
+LC_COLLATE="C"
+LC_CTYPE="C"
+LC_MESSAGES="C"
+LC_MONETARY="C"
+LC_NUMERIC="C"
+LC_TIME="C"
+LC_ALL="C"
+
+This is running preprocessfastqgzwithflankrandomnucleotide.sh from /Volumes/NAIST_data007/Zavolan_CPSF6_CLIP
+
+Start with SRR488727
+Fri Nov 27 09:21:32 JST 2020
+
+print variables
+<LIB>
+SRR488727
+<ADAPTER>
+TCGTATGCCGTCTTCTGCTTGT
+<QUALSCORE>
+Q64
+<MINLENGTH>
+18
+<MAXLENGTH>
+30
+<RANDOMNUC5P>
+0
+<RANDOMNUC3P>
+0
+
+head check file format SRR488727
+head: SRR488727.fastq: No such file or directory
+Done
+Fri Nov 27 09:21:32 JST 2020
+(base) okamurak@rnalab Zavolan_CPSF6_CLIP % /Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF/a01_getlistforpreprocessfastqgztllhpc.sh /Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF/preprocess.txt  
+/Users/okamurak/.bash_profile: line 17: export　PATH=/Users/okamurak/anaconda3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/okamurak/anaconda3/bin:/Users/okamurak/anaconda3/condabin:/Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF: No such file or directory
+Start
+Fri Nov 27 09:23:26 JST 2020
+variables to process
+SRR488727 TCGTATGCCGTCTTCTGCTTGT Q64 18 30 0 0
+run preprocessing
+/Users/okamurak/.bash_profile: line 17: export　PATH=/Users/okamurak/anaconda3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/okamurak/anaconda3/bin:/Users/okamurak/anaconda3/condabin:/Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF: No such file or directory
+check locale setting
+LANG=""
+LC_COLLATE="C"
+LC_CTYPE="C"
+LC_MESSAGES="C"
+LC_MONETARY="C"
+LC_NUMERIC="C"
+LC_TIME="C"
+LC_ALL="C"
+
+This is running preprocessfastqgzwithflankrandomnucleotide.sh from /Volumes/NAIST_data007/Zavolan_CPSF6_CLIP
+
+Start with SRR488727
+Fri Nov 27 09:23:27 JST 2020
+
+print variables
+<LIB>
+SRR488727
+<ADAPTER>
+TCGTATGCCGTCTTCTGCTTGT
+<QUALSCORE>
+Q64
+<MINLENGTH>
+18
+<MAXLENGTH>
+30
+<RANDOMNUC5P>
+0
+<RANDOMNUC3P>
+0
+
+note that this fastq file has random nucleotides flanking the insert sequence
+
+Processing files to clip, convert fasta, identifiers.
+clipping fasta file, discard sequences with no adaptor,
+discard sequences with 'N's, discard sequences shorter than 5 nt...
+converting fastq to fasta, rename identifiers to numbers...
+changing read identifiers to include library information...
+running FastQC for SRR488727.fastq.gz
+Started analysis of SRR488727.fastq.gz
+Approx 5% complete for SRR488727.fastq.gz
+Approx 10% complete for SRR488727.fastq.gz
+Approx 15% complete for SRR488727.fastq.gz
+Approx 20% complete for SRR488727.fastq.gz
+Approx 25% complete for SRR488727.fastq.gz
+Approx 30% complete for SRR488727.fastq.gz
+Approx 35% complete for SRR488727.fastq.gz
+Approx 40% complete for SRR488727.fastq.gz
+Approx 45% complete for SRR488727.fastq.gz
+Approx 50% complete for SRR488727.fastq.gz
+Approx 55% complete for SRR488727.fastq.gz
+Approx 60% complete for SRR488727.fastq.gz
+Approx 65% complete for SRR488727.fastq.gz
+Approx 70% complete for SRR488727.fastq.gz
+Approx 75% complete for SRR488727.fastq.gz
+Approx 80% complete for SRR488727.fastq.gz
+Approx 85% complete for SRR488727.fastq.gz
+Approx 90% complete for SRR488727.fastq.gz
+Approx 95% complete for SRR488727.fastq.gz
+Analysis complete for SRR488727.fastq.gz
+
+gunzip fastq files
+gunzip: SRR488727.fastq already exists -- skipping
+Done
+Fri Nov 27 09:25:22 JST 2020
+(base) okamurak@rnalab Zavolan_CPSF6_CLIP % /Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF/a01_getlistforpreprocessfastqgztllhpc.sh /Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF/preprocess.tx
+/Users/okamurak/.bash_profile: line 17: export　PATH=/Users/okamurak/anaconda3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/okamurak/anaconda3/bin:/Users/okamurak/anaconda3/condabin:/Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF: No such file or directory
+Start
+Fri Nov 27 09:34:00 JST 2020
+/Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF/a01_getlistforpreprocessfastqgztllhpc.sh: line 63: /Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF/preprocess.tx: No such file or directory
+Done
+Fri Nov 27 09:34:00 JST 2020
+(base) okamurak@rnalab Zavolan_CPSF6_CLIP % /Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF/a01_getlistforpreprocessfastqgztllhpc.sh /Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF/preprocess.txt
+/Users/okamurak/.bash_profile: line 17: export　PATH=/Users/okamurak/anaconda3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/okamurak/anaconda3/bin:/Users/okamurak/anaconda3/condabin:/Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF: No such file or directory
+Start
+Fri Nov 27 09:34:18 JST 2020
+variables to process
+SRR488727 TCGTATGCCGTCTTCTGCTTGT Q64 18 30 0 0
+run preprocessing
+/Users/okamurak/.bash_profile: line 17: export　PATH=/Users/okamurak/anaconda3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/okamurak/anaconda3/bin:/Users/okamurak/anaconda3/condabin:/Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF: No such file or directory
+check locale setting
+LANG=""
+LC_COLLATE="C"
+LC_CTYPE="C"
+LC_MESSAGES="C"
+LC_MONETARY="C"
+LC_NUMERIC="C"
+LC_TIME="C"
+LC_ALL="C"
+
+This is running preprocessfastqgzwithflankrandomnucleotide.sh from /Volumes/NAIST_data007/Zavolan_CPSF6_CLIP
+
+Start with SRR488727
+Fri Nov 27 09:34:19 JST 2020
+
+print variables
+<LIB>
+SRR488727
+<ADAPTER>
+TCGTATGCCGTCTTCTGCTTGT
+<QUALSCORE>
+Q64
+<MINLENGTH>
+18
+<MAXLENGTH>
+30
+<RANDOMNUC5P>
+0
+<RANDOMNUC3P>
+0
+
+note that this fastq file has random nucleotides flanking the insert sequence
+
+Processing files to clip, convert fasta, identifiers.
+clipping fasta file, discard sequences with no adaptor,
+discard sequences with 'N's, discard sequences shorter than 5 nt...
+converting fastq to fasta, rename identifiers to numbers...
+changing read identifiers to include library information...
+running FastQC for SRR488727.fastq.gz
+Started analysis of SRR488727.fastq.gz
+Approx 5% complete for SRR488727.fastq.gz
+Approx 10% complete for SRR488727.fastq.gz
+Approx 15% complete for SRR488727.fastq.gz
+Approx 20% complete for SRR488727.fastq.gz
+Approx 25% complete for SRR488727.fastq.gz
+Approx 30% complete for SRR488727.fastq.gz
+Approx 35% complete for SRR488727.fastq.gz
+Approx 40% complete for SRR488727.fastq.gz
+Approx 45% complete for SRR488727.fastq.gz
+Approx 50% complete for SRR488727.fastq.gz
+Approx 55% complete for SRR488727.fastq.gz
+Approx 60% complete for SRR488727.fastq.gz
+Approx 65% complete for SRR488727.fastq.gz
+Approx 70% complete for SRR488727.fastq.gz
+Approx 75% complete for SRR488727.fastq.gz
+Approx 80% complete for SRR488727.fastq.gz
+Approx 85% complete for SRR488727.fastq.gz
+Approx 90% complete for SRR488727.fastq.gz
+Approx 95% complete for SRR488727.fastq.gz
+Analysis complete for SRR488727.fastq.gz
+
+gunzip fastq files
+gunzip: SRR488727.fastq already exists -- skipping
+Done
+Fri Nov 27 09:36:10 JST 2020
+(base) okamurak@rnalab Zavolan_CPSF6_CLIP % /Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF/a01_getlistforpreprocessfastqgztllhpc.sh /Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF/preprocess.txt
+/Users/okamurak/.bash_profile: line 17: export　PATH=/Users/okamurak/anaconda3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/okamurak/anaconda3/bin:/Users/okamurak/anaconda3/condabin:/Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF: No such file or directory
+Start
+Fri Nov 27 09:37:30 JST 2020
+variables to process
+SRR488727 TCGTATGCCGTCTTCTGCTTGT Q64 18 30 0 0
+run preprocessing
+/Users/okamurak/.bash_profile: line 17: export　PATH=/Users/okamurak/anaconda3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/okamurak/anaconda3/bin:/Users/okamurak/anaconda3/condabin:/Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF: No such file or directory
+check locale setting
+LANG=""
+LC_COLLATE="C"
+LC_CTYPE="C"
+LC_MESSAGES="C"
+LC_MONETARY="C"
+LC_NUMERIC="C"
+LC_TIME="C"
+LC_ALL="C"
+
+This is running preprocessfastqgzwithflankrandomnucleotide.sh from /Volumes/NAIST_data007/Zavolan_CPSF6_CLIP
+
+Start with SRR488727
+Fri Nov 27 09:37:31 JST 2020
+
+print variables
+<LIB>
+SRR488727
+<ADAPTER>
+TCGTATGCCGTCTTCTGCTTGT
+<QUALSCORE>
+Q64
+<MINLENGTH>
+18
+<MAXLENGTH>
+30
+<RANDOMNUC5P>
+0
+<RANDOMNUC3P>
+0
+
+note that this fastq file has random nucleotides flanking the insert sequence
+
+Processing files to clip, convert fasta, identifiers.
+clipping fasta file, discard sequences with no adaptor,
+discard sequences with 'N's, discard sequences shorter than 5 nt...
+converting fastq to fasta, rename identifiers to numbers...
+changing read identifiers to include library information...
+running FastQC for SRR488727.fastq.gz
+Started analysis of SRR488727.fastq.gz
+Approx 5% complete for SRR488727.fastq.gz
+Approx 10% complete for SRR488727.fastq.gz
+Approx 15% complete for SRR488727.fastq.gz
+Approx 20% complete for SRR488727.fastq.gz
+Approx 25% complete for SRR488727.fastq.gz
+Approx 30% complete for SRR488727.fastq.gz
+Approx 35% complete for SRR488727.fastq.gz
+Approx 40% complete for SRR488727.fastq.gz
+Approx 45% complete for SRR488727.fastq.gz
+Approx 50% complete for SRR488727.fastq.gz
+Approx 55% complete for SRR488727.fastq.gz
+Approx 60% complete for SRR488727.fastq.gz
+Approx 65% complete for SRR488727.fastq.gz
+Approx 70% complete for SRR488727.fastq.gz
+Approx 75% complete for SRR488727.fastq.gz
+Approx 80% complete for SRR488727.fastq.gz
+Approx 85% complete for SRR488727.fastq.gz
+Approx 90% complete for SRR488727.fastq.gz
+Approx 95% complete for SRR488727.fastq.gz
+Analysis complete for SRR488727.fastq.gz
+
+gunzip fastq files
+gunzip: SRR488727.fastq already exists -- skipping
+Done
+Fri Nov 27 09:39:27 JST 2020
+(base) okamurak@rnalab Zavolan_CPSF6_CLIP % /Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF/a01_getlistforpreprocessfastqgztllhpc.sh /Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF/preprocess.txt
+/Users/okamurak/.bash_profile: line 17: export　PATH=/Users/okamurak/anaconda3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/okamurak/anaconda3/bin:/Users/okamurak/anaconda3/condabin:/Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF: No such file or directory
+Start
+Fri Nov 27 09:43:28 JST 2020
+variables to process
+SRR488727 TCGTATGCCGTCTTCTGCTTGT Q64 18 30 0 0
+run preprocessing
+/Users/okamurak/.bash_profile: line 17: export　PATH=/Users/okamurak/anaconda3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/okamurak/anaconda3/bin:/Users/okamurak/anaconda3/condabin:/Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF: No such file or directory
+check locale setting
+LANG=""
+LC_COLLATE="C"
+LC_CTYPE="C"
+LC_MESSAGES="C"
+LC_MONETARY="C"
+LC_NUMERIC="C"
+LC_TIME="C"
+LC_ALL="C"
+
+This is running preprocessfastqgzwithflankrandomnucleotide.sh from /Volumes/NAIST_data007/Zavolan_CPSF6_CLIP
+
+Start with SRR488727
+Fri Nov 27 09:43:29 JST 2020
+
+print variables
+<LIB>
+SRR488727
+<ADAPTER>
+TCGTATGCCGTCTTCTGCTTGT
+<QUALSCORE>
+Q64
+<MINLENGTH>
+18
+<MAXLENGTH>
+30
+<RANDOMNUC5P>
+0
+<RANDOMNUC3P>
+0
+
+note that this fastq file has random nucleotides flanking the insert sequence
+
+Processing files to clip, convert fasta, identifiers.
+clipping fasta file, discard sequences with no adaptor,
+discard sequences with 'N's, discard sequences shorter than 5 nt...
+converting fastq to fasta, rename identifiers to numbers...
+changing read identifiers to include library information...
+running FastQC for SRR488727.fastq.gz
+Started analysis of SRR488727.fastq.gz
+Approx 5% complete for SRR488727.fastq.gz
+Approx 10% complete for SRR488727.fastq.gz
+Approx 15% complete for SRR488727.fastq.gz
+Approx 20% complete for SRR488727.fastq.gz
+Approx 25% complete for SRR488727.fastq.gz
+Approx 30% complete for SRR488727.fastq.gz
+Approx 35% complete for SRR488727.fastq.gz
+Approx 40% complete for SRR488727.fastq.gz
+Approx 45% complete for SRR488727.fastq.gz
+Approx 50% complete for SRR488727.fastq.gz
+Approx 55% complete for SRR488727.fastq.gz
+Approx 60% complete for SRR488727.fastq.gz
+Approx 65% complete for SRR488727.fastq.gz
+Approx 70% complete for SRR488727.fastq.gz
+Approx 75% complete for SRR488727.fastq.gz
+Approx 80% complete for SRR488727.fastq.gz
+Approx 85% complete for SRR488727.fastq.gz
+Approx 90% complete for SRR488727.fastq.gz
+Approx 95% complete for SRR488727.fastq.gz
+Analysis complete for SRR488727.fastq.gz
+
+gunzip fastq files
+
+head check file format SRR488727
+@SRR488727.1 BS-DSU-ELLAC_0:6:1:13711:958 length=36
+NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
++SRR488727.1 BS-DSU-ELLAC_0:6:1:13711:958 length=36
+####################################
+@SRR488727.2 BS-DSU-ELLAC_0:6:1:12685:976 length=36
+NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
++SRR488727.2 BS-DSU-ELLAC_0:6:1:12685:976 length=36
+####################################
+@SRR488727.3 BS-DSU-ELLAC_0:6:1:12755:966 length=36
+NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
+
+use fastx_clipper to remove adapter sequences
+fastx_clipper: Invalid quality score value (char '#' ord 35 quality value -29) on line 4
+Done
+Fri Nov 27 09:47:04 JST 2020
+(base) okamurak@rnalab Zavolan_CPSF6_CLIP % /Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF/a01_getlistforpreprocessfastqgztllhpc.sh /Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF/preprocess.txt
+/Users/okamurak/.bash_profile: line 17: export　PATH=/Users/okamurak/anaconda3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/okamurak/anaconda3/bin:/Users/okamurak/anaconda3/condabin:/Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF: No such file or directory
+Start
+Fri Nov 27 09:49:19 JST 2020
+variables to process
+SRR488727 TCGTATGCCGTCTTCTGCTTGT Q33 18 30 0 0
+run preprocessing
+/Users/okamurak/.bash_profile: line 17: export　PATH=/Users/okamurak/anaconda3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/okamurak/anaconda3/bin:/Users/okamurak/anaconda3/condabin:/Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF: No such file or directory
+check locale setting
+LANG=""
+LC_COLLATE="C"
+LC_CTYPE="C"
+LC_MESSAGES="C"
+LC_MONETARY="C"
+LC_NUMERIC="C"
+LC_TIME="C"
+LC_ALL="C"
+
+This is running preprocessfastqgzwithflankrandomnucleotide.sh from /Volumes/NAIST_data007/Zavolan_CPSF6_CLIP
+
+Start with SRR488727
+Fri Nov 27 09:49:20 JST 2020
+
+print variables
+<LIB>
+SRR488727
+<ADAPTER>
+TCGTATGCCGTCTTCTGCTTGT
+<QUALSCORE>
+Q33
+<MINLENGTH>
+18
+<MAXLENGTH>
+30
+<RANDOMNUC5P>
+0
+<RANDOMNUC3P>
+0
+
+note that this fastq file has random nucleotides flanking the insert sequence
+
+Processing files to clip, convert fasta, identifiers.
+clipping fasta file, discard sequences with no adaptor,
+discard sequences with 'N's, discard sequences shorter than 5 nt...
+converting fastq to fasta, rename identifiers to numbers...
+changing read identifiers to include library information...
+running FastQC for SRR488727.fastq.gz
+Started analysis of SRR488727.fastq.gz
+Approx 5% complete for SRR488727.fastq.gz
+Approx 10% complete for SRR488727.fastq.gz
+Approx 15% complete for SRR488727.fastq.gz
+Approx 20% complete for SRR488727.fastq.gz
+Approx 25% complete for SRR488727.fastq.gz
+Approx 30% complete for SRR488727.fastq.gz
+Approx 35% complete for SRR488727.fastq.gz
+Approx 40% complete for SRR488727.fastq.gz
+Approx 45% complete for SRR488727.fastq.gz
+Approx 50% complete for SRR488727.fastq.gz
+Approx 55% complete for SRR488727.fastq.gz
+Approx 60% complete for SRR488727.fastq.gz
+Approx 65% complete for SRR488727.fastq.gz
+Approx 70% complete for SRR488727.fastq.gz
+Approx 75% complete for SRR488727.fastq.gz
+Approx 80% complete for SRR488727.fastq.gz
+Approx 85% complete for SRR488727.fastq.gz
+Approx 90% complete for SRR488727.fastq.gz
+Approx 95% complete for SRR488727.fastq.gz
+Analysis complete for SRR488727.fastq.gz
+
+gunzip fastq files
+
+head check file format SRR488727
+@SRR488727.1 BS-DSU-ELLAC_0:6:1:13711:958 length=36
+NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
++SRR488727.1 BS-DSU-ELLAC_0:6:1:13711:958 length=36
+####################################
+@SRR488727.2 BS-DSU-ELLAC_0:6:1:12685:976 length=36
+NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
++SRR488727.2 BS-DSU-ELLAC_0:6:1:12685:976 length=36
+####################################
+@SRR488727.3 BS-DSU-ELLAC_0:6:1:12755:966 length=36
+NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
+
+use fastx_clipper to remove adapter sequences
+Clipping Adapter: TCGTATGCCGTCTTCTGCTTGT
+Min. Length: 5
+Non-Clipped reads - discarded.
+Input: 57133855 reads.
+Output: 16880513 reads.
+discarded 600561 too-short reads.
+discarded 2238942 adapter-only reads.
+discarded 37371112 non-clipped reads.
+discarded 42727 N reads.
+use seqtk trimfq to trim flanking before 0 nt end 0 nt
+convert the clipped fastq file to fasta
+Input: 16880513 reads.
+Output: 16880513 reads.
+discarded 0 (0%) low-quality reads.
+
+head check SRR488727clip.fasta
+>SRR488727_1
+TGAATGGTGGCACCTGAACGATGCCGC
+>SRR488727_2
+TCGGAACTCTGAAA
+>SRR488727_3
+CCGGGGCTTCCTCCCGTAGATGC
+>SRR488727_4
+CTATGAACTATTGTATAAAAAA
+>SRR488727_5
+GGAACTATTTATGACCTTAGC
+
+Do collapsing of fasta file first to unique reads with collapsed counts in identifier
+
+collapsing clipped fasta file
+rename identifiers for SRR488727
+/Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF/a1_Preprocess_Fastq.sh: line 138: /usr/local/bin/fastx_collapser: cannot execute binary file
+
+head check collapsed file
+
+count numbers of collapsed sequences
+0
+Done
+Fri Nov 27 09:59:49 JST 2020
+(base) okamurak@rnalab Zavolan_CPSF6_CLIP % /Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF/a01_getlistforpreprocessfastqgztllhpc.sh /Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF/preprocess.txt  
+/Users/okamurak/.bash_profile: line 17: export　PATH=/Users/okamurak/anaconda3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/okamurak/anaconda3/bin:/Users/okamurak/anaconda3/condabin:/Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF: No such file or directory
+Start
+Fri Nov 27 12:13:58 JST 2020
+variables to process
+SRR488729 TCGTATGCCGTCTTCTGCTTGT Q33 18 30 0 0
+run preprocessing
+/Users/okamurak/.bash_profile: line 17: export　PATH=/Users/okamurak/anaconda3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/okamurak/anaconda3/bin:/Users/okamurak/anaconda3/condabin:/Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF: No such file or directory
+check locale setting
+LANG=""
+LC_COLLATE="C"
+LC_CTYPE="C"
+LC_MESSAGES="C"
+LC_MONETARY="C"
+LC_NUMERIC="C"
+LC_TIME="C"
+LC_ALL="C"
+
+This is running preprocessfastqgzwithflankrandomnucleotide.sh from /Volumes/NAIST_data007/Zavolan_CPSF6_CLIP
+
+Start with SRR488729
+Fri Nov 27 12:13:59 JST 2020
+
+print variables
+<LIB>
+SRR488729
+<ADAPTER>
+TCGTATGCCGTCTTCTGCTTGT
+<QUALSCORE>
+Q33
+<MINLENGTH>
+18
+<MAXLENGTH>
+30
+<RANDOMNUC5P>
+0
+<RANDOMNUC3P>
+0
+
+note that this fastq file has random nucleotides flanking the insert sequence
+
+Processing files to clip, convert fasta, identifiers.
+clipping fasta file, discard sequences with no adaptor,
+discard sequences with 'N's, discard sequences shorter than 5 nt...
+converting fastq to fasta, rename identifiers to numbers...
+changing read identifiers to include library information...
+running FastQC for SRR488729.fastq.gz
+Started analysis of SRR488729.fastq.gz
+Approx 5% complete for SRR488729.fastq.gz
+Approx 10% complete for SRR488729.fastq.gz
+Approx 15% complete for SRR488729.fastq.gz
+Approx 20% complete for SRR488729.fastq.gz
+Approx 25% complete for SRR488729.fastq.gz
+Approx 30% complete for SRR488729.fastq.gz
+Approx 35% complete for SRR488729.fastq.gz
+Approx 40% complete for SRR488729.fastq.gz
+Approx 45% complete for SRR488729.fastq.gz
+Approx 50% complete for SRR488729.fastq.gz
+Approx 55% complete for SRR488729.fastq.gz
+Approx 60% complete for SRR488729.fastq.gz
+Approx 65% complete for SRR488729.fastq.gz
+Approx 70% complete for SRR488729.fastq.gz
+Approx 75% complete for SRR488729.fastq.gz
+Approx 80% complete for SRR488729.fastq.gz
+Approx 85% complete for SRR488729.fastq.gz
+Approx 90% complete for SRR488729.fastq.gz
+Approx 95% complete for SRR488729.fastq.gz
+Analysis complete for SRR488729.fastq.gz
+
+gunzip fastq files
+
+head check file format SRR488729
+@SRR488729.1 BS-DSU-ATTILA_0:1:1:1051:17169 length=38
+ANNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
++SRR488729.1 BS-DSU-ATTILA_0:1:1:1051:17169 length=38
+A#####################################
+@SRR488729.2 BS-DSU-ATTILA_0:1:1:1051:10697 length=38
+GNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
++SRR488729.2 BS-DSU-ATTILA_0:1:1:1051:10697 length=38
+######################################
+@SRR488729.3 BS-DSU-ATTILA_0:1:1:1051:3127 length=38
+GNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
+
+use fastx_clipper to remove adapter sequences
+Clipping Adapter: TCGTATGCCGTCTTCTGCTTGT
+Min. Length: 5
+Non-Clipped reads - discarded.
+Input: 33238836 reads.
+Output: 20178651 reads.
+discarded 355870 too-short reads.
+discarded 668829 adapter-only reads.
+discarded 11719400 non-clipped reads.
+discarded 316086 N reads.
+use seqtk trimfq to trim flanking before 0 nt end 0 nt
+convert the clipped fastq file to fasta
+Input: 20178651 reads.
+Output: 20178651 reads.
+discarded 0 (0%) low-quality reads.
+
+head check SRR488729clip.fasta
+>SRR488729_1
+ATCGG
+>SRR488729_2
+ATCAGAAGATTGAGGG
+>SRR488729_3
+AGTTCTGGCCCCGGGG
+>SRR488729_4
+ATCAATCCAGCGCTAA
+>SRR488729_5
+TGACCTGTAATTGTGC
+
+Do collapsing of fasta file first to unique reads with collapsed counts in identifier
+
+collapsing clipped fasta file
+rename identifiers for SRR488729
+/Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF/a1_Preprocess_Fastq.sh: line 138: /usr/local/bin/fastx_collapser: cannot execute binary file
+
+head check collapsed file
+
+count numbers of collapsed sequences
+0
+variables to process
+SRR488727 TCGTATGCCGTCTTCTGCTTGT Q33 18 30 0 0
+run preprocessing
+/Users/okamurak/.bash_profile: line 17: export　PATH=/Users/okamurak/anaconda3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/okamurak/anaconda3/bin:/Users/okamurak/anaconda3/condabin:/Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF: No such file or directory
+check locale setting
+LANG=""
+LC_COLLATE="C"
+LC_CTYPE="C"
+LC_MESSAGES="C"
+LC_MONETARY="C"
+LC_NUMERIC="C"
+LC_TIME="C"
+LC_ALL="C"
+
+This is running preprocessfastqgzwithflankrandomnucleotide.sh from /Volumes/NAIST_data007/Zavolan_CPSF6_CLIP
+
+Start with SRR488727
+Fri Nov 27 12:20:59 JST 2020
+
+print variables
+<LIB>
+SRR488727
+<ADAPTER>
+TCGTATGCCGTCTTCTGCTTGT
+<QUALSCORE>
+Q33
+<MINLENGTH>
+18
+<MAXLENGTH>
+30
+<RANDOMNUC5P>
+0
+<RANDOMNUC3P>
+0
+
+note that this fastq file has random nucleotides flanking the insert sequence
+
+Processing files to clip, convert fasta, identifiers.
+clipping fasta file, discard sequences with no adaptor,
+discard sequences with 'N's, discard sequences shorter than 5 nt...
+converting fastq to fasta, rename identifiers to numbers...
+changing read identifiers to include library information...
+running FastQC for SRR488727.fastq.gz
+Started analysis of SRR488727.fastq.gz
+Approx 5% complete for SRR488727.fastq.gz
+Approx 10% complete for SRR488727.fastq.gz
+Approx 15% complete for SRR488727.fastq.gz
+Approx 20% complete for SRR488727.fastq.gz
+Approx 25% complete for SRR488727.fastq.gz
+Approx 30% complete for SRR488727.fastq.gz
+Approx 35% complete for SRR488727.fastq.gz
+Approx 40% complete for SRR488727.fastq.gz
+Approx 45% complete for SRR488727.fastq.gz
+Approx 50% complete for SRR488727.fastq.gz
+Approx 55% complete for SRR488727.fastq.gz
+Approx 60% complete for SRR488727.fastq.gz
+Approx 65% complete for SRR488727.fastq.gz
+Approx 70% complete for SRR488727.fastq.gz
+Approx 75% complete for SRR488727.fastq.gz
+Approx 80% complete for SRR488727.fastq.gz
+Approx 85% complete for SRR488727.fastq.gz
+Approx 90% complete for SRR488727.fastq.gz
+Approx 95% complete for SRR488727.fastq.gz
+Analysis complete for SRR488727.fastq.gz
+
+gunzip fastq files
+
+head check file format SRR488727
+@SRR488727.1 BS-DSU-ELLAC_0:6:1:13711:958 length=36
+NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
++SRR488727.1 BS-DSU-ELLAC_0:6:1:13711:958 length=36
+####################################
+@SRR488727.2 BS-DSU-ELLAC_0:6:1:12685:976 length=36
+NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
++SRR488727.2 BS-DSU-ELLAC_0:6:1:12685:976 length=36
+####################################
+@SRR488727.3 BS-DSU-ELLAC_0:6:1:12755:966 length=36
+NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
+
+use fastx_clipper to remove adapter sequences
+Clipping Adapter: TCGTATGCCGTCTTCTGCTTGT
+Min. Length: 5
+Non-Clipped reads - discarded.
+Input: 57133855 reads.
+Output: 16880513 reads.
+discarded 600561 too-short reads.
+discarded 2238942 adapter-only reads.
+discarded 37371112 non-clipped reads.
+discarded 42727 N reads.
+use seqtk trimfq to trim flanking before 0 nt end 0 nt
+convert the clipped fastq file to fasta
+Input: 16880513 reads.
+Output: 16880513 reads.
+discarded 0 (0%) low-quality reads.
+
+head check SRR488727clip.fasta
+>SRR488727_1
+TGAATGGTGGCACCTGAACGATGCCGC
+>SRR488727_2
+TCGGAACTCTGAAA
+>SRR488727_3
+CCGGGGCTTCCTCCCGTAGATGC
+>SRR488727_4
+CTATGAACTATTGTATAAAAAA
+>SRR488727_5
+GGAACTATTTATGACCTTAGC
+
+Do collapsing of fasta file first to unique reads with collapsed counts in identifier
+
+collapsing clipped fasta file
+rename identifiers for SRR488727
+/Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF/a1_Preprocess_Fastq.sh: line 138: /usr/local/bin/fastx_collapser: cannot execute binary file
+
+head check collapsed file
+
+count numbers of collapsed sequences
+0
+Done
+Fri Nov 27 12:31:14 JST 2020
+(base) okamurak@rnalab Zavolan_CPSF6_CLIP % conda install -c bioconda paralyzer
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: /Users/okamurak/anaconda3
+
+  added / updated specs:
+    - paralyzer
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    paralyzer-1.5              |                2          42 KB  bioconda
+    ------------------------------------------------------------
+                                           Total:          42 KB
+
+The following NEW packages will be INSTALLED:
+
+  paralyzer          bioconda/noarch::paralyzer-1.5-2
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+paralyzer-1.5        | 42 KB     | ############################################################################################################################################################### | 100% 
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+(base) okamurak@rnalab Zavolan_CPSF6_CLIP % chmod +x /Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF/Mapping_Paralyzer.sh 
+(base) okamurak@rnalab Zavolan_CPSF6_CLIP % /Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF/Mapping_Paralyzer.sh SRR488729
+Mapping clip.fastq to hg38 with 2 mismatches allowed
+Could not locate a Bowtie index corresponding to basename "hg38"
+Command: /Users/okamurak/anaconda3/bin/bowtie-align-s --wrapper basic-0 -v 2 -m 10 --best --strata hg38 clip.fastq .bowtie 
+Invalid maximum heap size: -XmxCPSF6.ini
+Error: Could not create the Java Virtual Machine.
+Error: A fatal exception has occurred. Program will exit.
+(base) okamurak@rnalab Zavolan_CPSF6_CLIP % /Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF/Mapping_Paralyzer.sh SRR488729
+Mapping SRR488729clip.fastq to hg38 with 2 mismatches allowed
+/Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF/Mapping_Paralyzer.sh: line 12: bowtie/Volumes/NAIST_data007/NarryKim_Aqseq_Fastq/hg38: No such file or directory
+Invalid maximum heap size: -XmxCPSF6.ini
+Error: Could not create the Java Virtual Machine.
+Error: A fatal exception has occurred. Program will exit.
+(base) okamurak@rnalab Zavolan_CPSF6_CLIP % /Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF/Mapping_Paralyzer.sh SRR488729
+Mapping SRR488729clip.fastq to hg38 with 2 mismatches allowed
+# reads processed: 20178651
+# reads with at least one reported alignment: 11730110 (58.13%)
+# reads that failed to align: 4502756 (22.31%)
+# reads with alignments suppressed due to -m: 3945785 (19.55%)
+Reported 11730110 alignments
+Invalid maximum heap size: -XmxCPSF6.ini
+Error: Could not create the Java Virtual Machine.
+Error: A fatal exception has occurred. Program will exit.
+(base) okamurak@rnalab Zavolan_CPSF6_CLIP % PARalyzer 2G CPSF6.ini
+Running PARalyzer v1.5
+Usage:
+PARalyzer <.ini file>
+Please see documentation on how to setup your .ini file
+(base) okamurak@rnalab Zavolan_CPSF6_CLIP % ./PARalyzer 2G  CPSF6.ini
+zsh: no such file or directory: ./PARalyzer
+(base) okamurak@rnalab Zavolan_CPSF6_CLIP % PARalyzer 2G  CPSF6.ini
+Running PARalyzer v1.5
+Usage:
+PARalyzer <.ini file>
+Please see documentation on how to setup your .ini file
+(base) okamurak@rnalab Zavolan_CPSF6_CLIP % PARalyzer 2G CPSF6.ini
+Running PARalyzer v1.5
+Usage:
+PARalyzer <.ini file>
+Please see documentation on how to setup your .ini file
+(base) okamurak@rnalab Zavolan_CPSF6_CLIP % PARalyzer CPSF6.ini
+Invalid maximum heap size: -XmxCPSF6.ini
+Error: Could not create the Java Virtual Machine.
+Error: A fatal exception has occurred. Program will exit.
+(base) okamurak@rnalab Zavolan_CPSF6_CLIP % PARalyzer 4G /Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF/CPSF6.ini 
+Running PARalyzer v1.5
+Parsing bowtie file(s)...Done
+Creating Read Groups & Clusters...Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+	at java.util.HashMap.newNode(HashMap.java:1742)
+	at java.util.HashMap.putVal(HashMap.java:630)
+	at java.util.HashMap.put(HashMap.java:611)
+	at KDECluster.addRead(KDECluster.java:79)
+	at ReadGroup.determineClusterReads(ReadGroup.java:521)
+	at PARalyze.main(PARalyze.java:178)
+(base) okamurak@rnalab Zavolan_CPSF6_CLIP % PARalyzer 2G /Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF/CPSF6.ini 
+Running PARalyzer v1.5
+Cannot find file: /Volumes/NAIST_data007/Zavolan_CPSF6_CLIP/${LIB}.bowtie
+Usage:
+PARalyzer <.ini file>
+Please see documentation on how to setup your .ini file
+(base) okamurak@rnalab Zavolan_CPSF6_CLIP % PARalyzer 2G /Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF/CPSF6.ini 
+Running PARalyzer v1.5
+Parsing bowtie file(s)...Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+	at java.util.ArrayList.<init>(ArrayList.java:152)
+	at Chromosome.<init>(Chromosome.java:6)
+	at Genome.addRead(Genome.java:19)
+	at PARCLIPbowtieParser.parseFile(PARCLIPbowtieParser.java:101)
+	at PARalyze.main(PARalyze.java:100)
+(base) okamurak@rnalab Zavolan_CPSF6_CLIP % PARalyzer 4G /Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF/CPSF6.ini
+Running PARalyzer v1.5
+Parsing SAM file(s)...Done
+Creating Read Groups & Clusters...Exception in thread "main" java.lang.Exception: * is not found in the .2bit file
+	at MyTwoBitParser.loadChromosome(MyTwoBitParser.java:58)
+	at MyTwoBitParser.getSequence(MyTwoBitParser.java:118)
+	at PARalyze.main(PARalyze.java:204)
+(base) okamurak@rnalab Zavolan_CPSF6_CLIP % PARalyzer 10G /Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF/CPSF6.ini
+Running PARalyzer v1.5
+Parsing SAM file(s)...Done
+Creating Read Groups & Clusters...Exception in thread "main" java.lang.Exception: * is not found in the .2bit file
+	at MyTwoBitParser.loadChromosome(MyTwoBitParser.java:58)
+	at MyTwoBitParser.getSequence(MyTwoBitParser.java:118)
+	at PARalyze.main(PARalyze.java:204)
+(base) okamurak@rnalab Zavolan_CPSF6_CLIP %  -b -F 4　SRR488729.hg38.sam > SRR488729.hg38.mapped.bam
+zsh: command not found: -b
+(base) okamurak@rnalab Zavolan_CPSF6_CLIP % samtools view  -b -F 4　SRR488729.hg38.sam > SRR488729.hg38.mapped.bam
+samtools view: No input provided or missing option argument.
+
+Usage: samtools view [options] <in.bam>|<in.sam>|<in.cram> [region ...]
+
+Options:
+  -b       output BAM
+  -C       output CRAM (requires -T)
+  -1       use fast BAM compression (implies -b)
+  -u       uncompressed BAM output (implies -b)
+  -h       include header in SAM output
+  -H       print SAM header only (no alignments)
+  -c       print only the count of matching records
+  -o FILE  output file name [stdout]
+  -U FILE  output reads not selected by filters to FILE [null]
+  -t FILE  FILE listing reference names and lengths (see long help) [null]
+  -L FILE  only include reads overlapping this BED FILE [null]
+  -r STR   only include reads in read group STR [null]
+  -R FILE  only include reads with read group listed in FILE [null]
+  -q INT   only include reads with mapping quality >= INT [0]
+  -l STR   only include reads in library STR [null]
+  -m INT   only include reads with number of CIGAR operations consuming
+           query sequence >= INT [0]
+  -f INT   only include reads with all  of the FLAGs in INT present [0]
+  -F INT   only include reads with none of the FLAGS in INT present [0]
+  -G INT   only EXCLUDE reads with all  of the FLAGs in INT present [0]
+  -s FLOAT subsample reads (given INT.FRAC option value, 0.FRAC is the
+           fraction of templates/read pairs to keep; INT part sets seed)
+  -M       use the multi-region iterator (increases the speed, removes
+           duplicates and outputs the reads as they are ordered in the file)
+  -x STR   read tag to strip (repeatable) [null]
+  -B       collapse the backward CIGAR operation
+  -?       print long help, including note about region specification
+  -S       ignored (input format is auto-detected)
+      --input-fmt-option OPT[=VAL]
+               Specify a single input file format option in the form
+               of OPTION or OPTION=VALUE
+  -O, --output-fmt FORMAT[,OPT[=VAL]]...
+               Specify output format (SAM, BAM, CRAM)
+      --output-fmt-option OPT[=VAL]
+               Specify a single output file format option in the form
+               of OPTION or OPTION=VALUE
+  -T, --reference FILE
+               Reference sequence FASTA FILE [null]
+  -@, --threads INT
+               Number of additional threads to use [0]
+
+(base) okamurak@rnalab Zavolan_CPSF6_CLIP % samtools view  -b -F 4　SRR488729.hg38.bam > SRR488729.hg38.mapped.bam
+
+samtools view: No input provided or missing option argument.
+
+Usage: samtools view [options] <in.bam>|<in.sam>|<in.cram> [region ...]
+
+Options:
+  -b       output BAM
+  -C       output CRAM (requires -T)
+  -1       use fast BAM compression (implies -b)
+  -u       uncompressed BAM output (implies -b)
+  -h       include header in SAM output
+  -H       print SAM header only (no alignments)
+  -c       print only the count of matching records
+  -o FILE  output file name [stdout]
+  -U FILE  output reads not selected by filters to FILE [null]
+  -t FILE  FILE listing reference names and lengths (see long help) [null]
+  -L FILE  only include reads overlapping this BED FILE [null]
+  -r STR   only include reads in read group STR [null]
+  -R FILE  only include reads with read group listed in FILE [null]
+  -q INT   only include reads with mapping quality >= INT [0]
+  -l STR   only include reads in library STR [null]
+  -m INT   only include reads with number of CIGAR operations consuming
+           query sequence >= INT [0]
+  -f INT   only include reads with all  of the FLAGs in INT present [0]
+  -F INT   only include reads with none of the FLAGS in INT present [0]
+  -G INT   only EXCLUDE reads with all  of the FLAGs in INT present [0]
+  -s FLOAT subsample reads (given INT.FRAC option value, 0.FRAC is the
+           fraction of templates/read pairs to keep; INT part sets seed)
+  -M       use the multi-region iterator (increases the speed, removes
+           duplicates and outputs the reads as they are ordered in the file)
+  -x STR   read tag to strip (repeatable) [null]
+  -B       collapse the backward CIGAR operation
+  -?       print long help, including note about region specification
+  -S       ignored (input format is auto-detected)
+      --input-fmt-option OPT[=VAL]
+               Specify a single input file format option in the form
+               of OPTION or OPTION=VALUE
+  -O, --output-fmt FORMAT[,OPT[=VAL]]...
+               Specify output format (SAM, BAM, CRAM)
+      --output-fmt-option OPT[=VAL]
+               Specify a single output file format option in the form
+               of OPTION or OPTION=VALUE
+  -T, --reference FILE
+               Reference sequence FASTA FILE [null]
+  -@, --threads INT
+               Number of additional threads to use [0]
+
+(base) okamurak@rnalab Zavolan_CPSF6_CLIP % samtools view  -b -F 4 /Volumes/NAIST_data007/Zavolan_CPSF6_CLIP/SRR488729.hg38.bam  > /Volumes/NAIST_data007/Zavolan_CPSF6_CLIP/SRR488729.hg38.mapped.bam
+(base) okamurak@rnalab Zavolan_CPSF6_CLIP % samtools view  -b -F 4 /Volumes/NAIST_data007/Zavolan                              
+[E::hts_open_format] Failed to open file /Volumes/NAIST_data007/Zavolan
+samtools view: failed to open "/Volumes/NAIST_data007/Zavolan" for reading: No such file or directory
+(base) okamurak@rnalab Zavolan_CPSF6_CLIP % samtools view -h  /Volumes/NAIST_data007/Zavolan_CPSF6_CLIP/SRR488729.hg38.mapped.bam > /Volumes/NAIST_data007/Zavolan_CPSF6_CLIP/SRR488729.hg38.mapped.sam
+(base) okamurak@rnalab Zavolan_CPSF6_CLIP % PARalyzer 10G /Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF/CPSF6.ini
+Running PARalyzer v1.5
+Parsing SAM file(s)...Done
+Creating Read Groups & Clusters...Done
+Sorting Groups...Done
+Generating Output...Done!
+I identified a total of 11730110 reads mapping to 9641271 Unique genomic coordinates
+Making up 263201 groups
+Consisting of 294336 clusters
+(base) okamurak@rnalab Zavolan_CPSF6_CLIP % samtools view  -b -F 4　SRR488727.hg38.bam > SRR488727.hg38.mapped.bam
+samtools view: No input provided or missing option argument.
+
+Usage: samtools view [options] <in.bam>|<in.sam>|<in.cram> [region ...]
+
+Options:
+  -b       output BAM
+  -C       output CRAM (requires -T)
+  -1       use fast BAM compression (implies -b)
+  -u       uncompressed BAM output (implies -b)
+  -h       include header in SAM output
+  -H       print SAM header only (no alignments)
+  -c       print only the count of matching records
+  -o FILE  output file name [stdout]
+  -U FILE  output reads not selected by filters to FILE [null]
+  -t FILE  FILE listing reference names and lengths (see long help) [null]
+  -L FILE  only include reads overlapping this BED FILE [null]
+  -r STR   only include reads in read group STR [null]
+  -R FILE  only include reads with read group listed in FILE [null]
+  -q INT   only include reads with mapping quality >= INT [0]
+  -l STR   only include reads in library STR [null]
+  -m INT   only include reads with number of CIGAR operations consuming
+           query sequence >= INT [0]
+  -f INT   only include reads with all  of the FLAGs in INT present [0]
+  -F INT   only include reads with none of the FLAGS in INT present [0]
+  -G INT   only EXCLUDE reads with all  of the FLAGs in INT present [0]
+  -s FLOAT subsample reads (given INT.FRAC option value, 0.FRAC is the
+           fraction of templates/read pairs to keep; INT part sets seed)
+  -M       use the multi-region iterator (increases the speed, removes
+           duplicates and outputs the reads as they are ordered in the file)
+  -x STR   read tag to strip (repeatable) [null]
+  -B       collapse the backward CIGAR operation
+  -?       print long help, including note about region specification
+  -S       ignored (input format is auto-detected)
+      --input-fmt-option OPT[=VAL]
+               Specify a single input file format option in the form
+               of OPTION or OPTION=VALUE
+  -O, --output-fmt FORMAT[,OPT[=VAL]]...
+               Specify output format (SAM, BAM, CRAM)
+      --output-fmt-option OPT[=VAL]
+               Specify a single output file format option in the form
+               of OPTION or OPTION=VALUE
+  -T, --reference FILE
+               Reference sequence FASTA FILE [null]
+  -@, --threads INT
+               Number of additional threads to use [0]
+
+(base) okamurak@rnalab Zavolan_CPSF6_CLIP %  view  -b -F 4 /Volumes/NAIST_data007/Zavolan_CPSF6_CLIP/SRR488727.hg38.bam > SRR488727.hg38.mapped.bam
+E27: Farsi support has been removed
+(base) okamurak@rnalab Zavolan_CPSF6_CLIP % samtools -b -F 4 /Volumes/NAIST_data007/Zavolan_CPSF6_CLIP/SRR488727.hg38.bam > SRR488727.hg38.mapped.bam
+[main] unrecognized command '-b'
+(base) okamurak@rnalab Zavolan_CPSF6_CLIP % samtools view  -b -F 4 /Volumes/NAIST_data007/Zavolan_CPSF6_CLIP/SRR488727.hg38.bam > SRR488727.hg38.mapped.bam
+
+(base) okamurak@rnalab Zavolan_CPSF6_CLIP % samtools view -h  /Volumes/NAIST_data007/Zavolan_CPSF6_CLIP/SRR488727.hg38.mapped.bam > /Volumes/NAIST_data007/Zavolan_CPSF6_CLIP/SRR488727.hg38.mapped.sam
+(base) okamurak@rnalab Zavolan_CPSF6_CLIP % PARalyzer 10G /Users/okamurak/Documents/GitHub/Zavolan_CLIP_CPSF/CPSF6.ini
+Running PARalyzer v1.5
+Parsing SAM file(s)...Done
+Creating Read Groups & Clusters...Done
+Sorting Groups...Done
+Generating Output...Done!
+I identified a total of 8829919 reads mapping to 8076847 Unique genomic coordinates
+Making up 217378 groups
+Consisting of 268827 clusters
+(base) okamurak@rnalab Zavolan_CPSF6_CLIP % 
+
